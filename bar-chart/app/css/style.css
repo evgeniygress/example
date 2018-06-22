@@ -1,0 +1,121 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+.wrapper {
+  width: 100%;
+  margin: 100px auto;
+  background-color: #eee;
+  padding: 50px 50px 50px 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative; }
+  .wrapper:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: absolute;
+    top: 50px;
+    left: 45px; }
+  .wrapper:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+    bottom: 45px;
+    right: 50px; }
+
+.bar-chart {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  height: 300px;
+  position: relative; }
+  .bar-chart:before {
+    content: "5";
+    width: 15px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 100px;
+    left: -10px; }
+  .bar-chart:after {
+    content: "10";
+    width: 15px;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: 200px;
+    left: -10px; }
+
+.chartItem {
+  width: 2%;
+  margin: 0 10px;
+  float: left;
+  height: 100%;
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, from(#a0f07c), color-stop(33%, #2d8009), color-stop(34%, #edf26b), color-stop(66%, #f3e50a), color-stop(67%, #f3570a), to(#f30a31));
+  background: -webkit-linear-gradient(bottom, #a0f07c 0%, #2d8009 33%, #edf26b 34%, #f3e50a 66%, #f3570a 67%, #f30a31 100%);
+  background: -o-linear-gradient(bottom, #a0f07c 0%, #2d8009 33%, #edf26b 34%, #f3e50a 66%, #f3570a 67%, #f30a31 100%);
+  background: linear-gradient(0deg, #a0f07c 0%, #2d8009 33%, #edf26b 34%, #f3e50a 66%, #f3570a 67%, #f30a31 100%); }
+
+.chartItemInner {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #eee; }

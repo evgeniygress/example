@@ -1,0 +1,73 @@
+@import "reset";
+
+.wrapper {
+	width: 100%;
+	margin: 100px auto;
+	background-color: #eee;
+	padding: 50px 50px 50px 50px; 
+	box-sizing: border-box;
+	position: relative;
+	&:before {
+		content:"";
+		width: 10px;
+		height: 10px;
+		border-top: 1px solid #000;
+		border-left: 1px solid #000;
+		transform: rotate(45deg);
+		position: absolute;
+		top: 50px;
+		left: 45px;
+	}
+	&:after {
+		content:"";
+		width: 10px;
+		height: 10px;
+		border-bottom: 1px solid #000;
+		border-right: 1px solid #000;
+		transform: rotate(-45deg);
+		position: absolute;
+		bottom: 45px;
+		right: 50px;
+	}
+}
+.bar-chart {
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	height: 300px;
+	position: relative;
+	&:before {
+		content:"5";
+		width: 15px;
+		height: 2px;
+		background-color: #000;
+		position: absolute;
+		bottom: 100px;
+		left: -10px;
+	}
+	&:after {
+		content:"10";
+		width: 15px;
+		height: 2px;
+		background-color: #000;
+		position: absolute;
+		bottom: 200px;
+		left: -10px;
+	}
+}
+.chartItem {
+	width: 2%;
+	margin: 0 10px;
+	float: left;
+	height: 100%;
+	position: relative;
+	background: linear-gradient(0deg, #a0f07c 0%, #2d8009 33%, #edf26b 34%, #f3e50a 66%, #f3570a 67%, #f30a31 100%);
+	
+}
+.chartItemInner {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #eee;
+}
