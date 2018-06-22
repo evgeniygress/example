@@ -1,0 +1,41 @@
+/* Color */
+
+$aqua: #00e0d0;
+$text-h: #413d4b;
+$color-txt: #666666;
+
+
+@mixin cliarfix {
+	&:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+	}
+}
+
+@mixin button-link {
+	padding: 16px 16px;
+	border: 1px solid $aqua;
+	color: $aqua;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 120px;
+	font-size: 16px;
+	transition: all 0.2s ease;
+	&:hover {
+		border: 1px solid #fff;
+		color: #fff;
+		background-color: #413d4b;
+	}
+}
+
+@mixin title-h3 {
+	color: #413d4b;
+	font-family: 'playfair_displaybold';
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}

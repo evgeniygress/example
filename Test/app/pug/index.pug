@@ -1,0 +1,251 @@
+doctype html
+html(lang="en")
+	include includes/head.pug
+	body
+		.header-wrapper
+			header.header
+				.logo-wrapper
+					a(class='logo-link' href='#')
+						img.logo-link__img(alt="logo" src="images/logo.png")
+				.mobile-nav#mob-nav
+					i.icon-menu
+				ul.header-menu#header-menu
+					li.header-menu__item
+						a(class='header-menu__item-link activ-link' href='#') home
+					li.header-menu__item
+						a(class='header-menu__item-link' href='#') about
+					li.header-menu__item
+						a(class='header-menu__item-link' href='#') expertise
+					li.header-menu__item
+						a(class='header-menu__item-link' href='#') teams
+					li.header-menu__item
+						a(class='header-menu__item-link' href='#') works
+					li.header-menu__item
+						a(class='header-menu__item-link' href='#') people say
+					li.header-menu__item
+						a(class='header-menu__item-link' href='#') contact
+				.header__slider
+					.owl-carousel
+						.item
+							h2.header__slider-title We Are Awesome Creative Agency
+							p.header__slider-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+							a(class='header__slider-link' href='#') learn more
+						.item
+							h2.header__slider-title We Are Awesome Creative Agency
+							p.header__slider-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+							a(class='header__slider-link' href='#') learn more
+						.item
+							h2.header__slider-title We Are Awesome Creative Agency
+							p.header__slider-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+							a(class='header__slider-link' href='#') learn more
+						.item
+							h2.header__slider-title We Are Awesome Creative Agency
+							p.header__slider-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+							a(class='header__slider-link' href='#') learn more
+		section.story-block
+			.story-image__wrapper
+				img.story-block__img(alt="color-logo" src="images/color-logo.png")
+			.story-wrapper
+				h3.story-block__title our story
+				p.story-block__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus
+				p.story-block__text Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+				a(class='story-block__link' href='#') learn more
+		.video-wrapper
+			.story-video__wrap
+				video(controls)
+					source(src="video/video.mp4" type="video/mp4")
+					source(src="video/video.webm" type="video/webm")
+		section.expertise-block
+			h3.expertise-block__title expertise
+			p.expertise-block__text Lorem ipsum dolor sit amet proin gravida nibh vel velit
+			.expertise-wrapper
+				.expertise-block__element
+					i.icon.icon-monitor
+					h4.expertise-block__element-title web design & development
+					p.expertise-block__element-tetx This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+				.expertise-block__element
+					i.icon.icon-draw
+					h4.expertise-block__element-title branding identity
+					p.expertise-block__element-tetx This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+				.expertise-block__element
+					i.icon.icon-tel
+					h4.expertise-block__element-title mobile app
+					p.expertise-block__element-tetx This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+				.expertise-block__element
+					i.icon.icon-chart
+					h4.expertise-block__element-title search engine optimization
+					p.expertise-block__element-tetx This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+				.expertise-block__element
+					i.icon.icon-computer
+					h4.expertise-block__element-title game development
+					p.expertise-block__element-tetx This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+				.expertise-block__element
+					i.icon.icon-heart
+					h4.expertise-block__element-title made with love
+					p.expertise-block__element-tetx This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+		.team-block-wrapper
+			section.team-block
+				h3.team-block__title meet our amazing team
+				p.team-block__text Lorem ipsum dolor sit amet proin gravida nibh vel velit
+				.team-wrapper
+					.team-block__element
+						img.team-block__element-img(alt="team" src="images/team/team.jpg")
+						h4.team-block__element-title Semf Ucuk
+						p.pteam-block__element-specialty ceo & founder
+					.team-block__element
+						img.team-block__element-img(alt="team" src="images/team/team.jpg")
+						h4.team-block__element-title Dik Adalin
+						p.pteam-block__element-specialty Engineering
+					.team-block__element
+						img.team-block__element-img(alt="team" src="images/team/team.jpg")
+						h4.team-block__element-title Jeng Kol
+						p.pteam-block__element-specialty Designer
+					.team-block__element
+						img.team-block__element-img(alt="team" src="images/team/team.jpg")
+						h4.team-block__element-title Pet Romak
+						p.pteam-block__element-specialty Marketing
+				p.team-block__slogan Become part of our dream team, let’s join us !
+				a(class='team-block__link' href='#') we are hiring
+		.works-block
+			.works-block__title our works
+			a(class='works-block__link' href='#') See All Project in dribbble &gt;
+			.works-wrapper
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works-2.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works-2.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works-2.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works-2.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works-2.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works.jpg")
+				.works-block__element
+					a(class='works-block__element-link' href='#')
+						img.works-block__element-img(alt="work" src="images/works/works-2.jpg")
+			a(class='works-block__more' href='#') load more
+		.say-block-wrapper
+			section.say-block
+				.say-block__title
+					i.icon-left-quotes-sign
+				.say-slider
+					.client-carousel
+						.client-carousel__item
+							p.say-slider__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 1
+							h4.say-slider__name Jane Galadriel
+							span.say-slider__name-specialty ceo tengkurep
+						.client-carousel__item
+							p.say-slider__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 2
+							h4.say-slider__name Jane Galadriel
+							span.say-slider__name-specialty ceo tengkurep
+						.client-carousel__item
+							p.say-slider__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 3
+							h4.say-slider__name Jane Galadriel
+							span.say-slider__name-specialty ceo tengkurep
+						.client-carousel__item
+							p.say-slider__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 4
+							h4.say-slider__name Jane Galadriel
+							span.say-slider__name-specialty ceo tengkurep
+						.client-carousel__item
+							p.say-slider__text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. 5
+							h4.say-slider__name Jane Galadriel
+							span.say-slider__name-specialty ceo tengkurep
+					.client-carousel__nav
+						.client-nav__wrapper
+							.client-nav__dot
+								img.dot-nav__img(alt="nav" src="images/client/Jack.png")
+							.client-nav__dot
+								img.dot-nav__img(alt="nav" src="images/client/Mary.png")
+							.client-nav__dot
+								img.dot-nav__img(alt="nav" src="images/client/Jane.png")
+							.client-nav__dot
+								img.dot-nav__img(alt="nav" src="images/client/Sam.png")
+							.client-nav__dot
+								img.dot-nav__img(alt="nav" src="images/client/Lilu.png")
+					.client-nav__scrol
+						.prev-slide
+							i.icon-left-arrow-chevron
+						.next-slide
+							i.icon-right-chevron
+		section.feedback-block
+			.contact
+				h3.contact__title give us a good news
+				form.contact__form
+					input.contact__form-item(type="text" name="name" placeholder="Name")
+					input.contact__form-item(type="email" name="email" placeholder="Email")
+					input.contact__form-item(type="text" name="name" placeholder="Subject")
+					textarea.contact__form-area(rows="18" name="text" placeholder="Your Massage")
+					input.contact__form-submit(type="submit" name="submit" value="SUBMIT")
+			.clients
+				h3.clients__title our happy client
+				img.clients__img(alt="brand" src="images/brands/zara.png")
+				img.clients__img(alt="brand" src="images/brands/mango.png")
+				img.clients__img(alt="brand" src="images/brands/barneys.png")
+				img.clients__img(alt="brand" src="images/brands/gucci.png")
+				img.clients__img(alt="brand" src="images/brands/calvinKlein.png")
+				img.clients__img(alt="brand" src="images/brands/nike.png")
+				img.clients__img(alt="brand" src="images/brands/converse.png")
+				img.clients__img(alt="brand" src="images/brands/puma.png")
+				img.clients__img(alt="brand" src="images/brands/levis.png")
+				img.clients__img(alt="brand" src="images/brands/billaBong.png")
+		.footer-wrapper
+			footer.footer
+				.footer__column
+					a(class='logo-link' href='#')
+						img.logo-link__img(alt="logo" src="images/logo.png")
+					p.footer__column-text lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
+				.footer__column
+					h4.footer__column-title our studio
+					i.icon-location-pin
+					p.footer__column-text Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+					i.icon-phone
+					p.footer__column-text (+62) 21-2224 3333
+				.footer__column
+					h4.footer__column-title stay in touch
+					.subscribe
+						form.subscribet__form
+							input.subscribet__form-item(type="text" name="newsletter" placeholder="Subscribe our newsletter")
+							input.subscribet__form-submit(type="submit" name="submit" value="")
+					.footer__column-social
+						a(class='footer__social-link' href='#')
+							i.icon-facebook-logo-in-circular-button-outlined-social-symbol
+						a(class='footer__social-link' href='#')
+							i.icon-twitter-circular-button
+						a(class='footer__social-link' href='#')
+							i.icon-basketball
+						a(class='footer__social-link' href='#')
+							i.icon-instagram
+						a(class='footer__social-link' href='#')
+							i.icon-google-plus-circular-button
+						a(class='footer__social-link' href='#')
+							i.icon-youtube
+				.footer__copyright
+					.footer__copyright-link
+						.copyright__link-wrap
+							a(class='copyright__link' href='#') help
+							a(class='copyright__link' href='#') terms &amp; condition
+							a(class='copyright__link' href='#') privacy
+						p.footer__column-copyright Copyright &copy; 2015 - Tajem Creative
